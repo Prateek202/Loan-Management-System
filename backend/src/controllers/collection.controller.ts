@@ -53,6 +53,15 @@ export const addPayment = async (
       });
     }
 
+    if (amount <= 0) {
+      return res.status(400).json({
+      message:
+      "Payment amount must be greater than 0",
+      });
+    }
+
+
+
     if (
       amount > loan.outstandingAmount
     ) {
@@ -61,6 +70,7 @@ export const addPayment = async (
           "Payment exceeds outstanding amount",
       });
     }
+
 
     await Payment.create({
       loanId,
