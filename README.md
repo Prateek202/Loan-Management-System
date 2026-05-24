@@ -4,6 +4,13 @@ A full-stack Loan Management System built using MERN Stack + Next.js + TypeScrip
 
 This system allows borrowers to apply for loans and enables internal teams to manage loans across their lifecycle through role-based dashboards.
 
+## Live Links
+
+Frontend:
+https://loan-management-system-virid-seven.vercel.app/
+
+Backend:
+https://lms-backend-s9dm.onrender.com
 ---
 
 # Features
